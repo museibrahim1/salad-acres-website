@@ -1511,7 +1511,7 @@ img {
 .contact-details h4 {
     font-size: 0.75rem;
     font-weight: 700;
-    color: var(--accent);
+    color: var(--primary-light);
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin-bottom: 24px;
@@ -1527,19 +1527,19 @@ img {
 .contact-icon {
     width: 48px;
     height: 48px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(74, 124, 35, 0.15);
     border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(74, 124, 35, 0.3);
 }
 
 .contact-icon svg {
     width: 22px;
     height: 22px;
-    stroke: var(--accent);
+    stroke: var(--primary-light);
 }
 
 .contact-item h5 {
@@ -1557,7 +1557,7 @@ img {
 }
 
 .contact-item a:hover {
-    color: var(--accent);
+    color: var(--primary-light);
 }
 
 .contact-form-wrapper {
