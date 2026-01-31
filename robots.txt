@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://salad-acres.pages.dev/sitemap.xml
+Sitemap: https://saladsacres.com/sitemap.xml
