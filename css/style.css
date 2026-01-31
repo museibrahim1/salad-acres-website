@@ -772,6 +772,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding-left: 60px;
 }
 
 .promise-item {
@@ -855,6 +856,7 @@ img {
     
     .promises-list {
         order: 2;
+        padding-left: 0;
     }
     
     .promise-text {
