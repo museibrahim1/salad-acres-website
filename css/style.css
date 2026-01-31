@@ -195,35 +195,36 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 20px;
 }
 
 .social-icons {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
 }
 
 .social-icons a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.2);
+    width: 28px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 50%;
     color: var(--white);
     transition: var(--transition);
 }
 
 .social-icons a:hover {
-    background: rgba(255, 255, 255, 0.4);
-    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.35);
 }
 
 .social-icons svg {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
 }
 
 .top-banner p {
