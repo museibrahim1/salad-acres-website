@@ -772,7 +772,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding-left: 60px;
+    padding-left: 120px;
 }
 
 .promise-item {
