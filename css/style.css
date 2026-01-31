@@ -191,20 +191,56 @@ img {
     font-size: 0.9rem;
 }
 
+.top-banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.social-icons svg {
+    width: 16px;
+    height: 16px;
+}
+
 .top-banner p {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
+    margin: 0;
 }
 
-.top-banner a {
+.top-banner p a {
     font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
 
-.top-banner a:hover {
+.top-banner p a:hover {
     opacity: 0.9;
 }
 
