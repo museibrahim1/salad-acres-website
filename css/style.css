@@ -201,29 +201,29 @@ img {
 .social-icons {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
 }
 
 .social-icons a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
-    background: rgba(255, 255, 255, 0.15);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     color: var(--white);
     transition: var(--transition);
 }
 
 .social-icons a:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.4);
     transform: translateY(-2px);
 }
 
 .social-icons svg {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
 }
 
 .top-banner p {
@@ -1629,6 +1629,35 @@ img {
 .footer-brand p {
     color: var(--gray-400);
     font-size: 0.95rem;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: var(--gray-700);
+    border-radius: 50%;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.footer-social a:hover {
+    background: var(--primary);
+    transform: translateY(-3px);
+}
+
+.footer-social svg {
+    width: 20px;
+    height: 20px;
 }
 
 .footer-links ul {

@@ -310,15 +310,16 @@ function initSmoothScroll() {
                     e.preventDefault();
                     const navbar = document.querySelector('.navbar');
                     const navbarHeight = navbar ? navbar.offsetHeight : 0;
-                    const topBanner = document.querySelector('.top-banner');
-                    const bannerHeight = topBanner ? topBanner.offsetHeight : 0;
                     
-                    // Calculate offset based on scroll position
-                    const totalOffset = window.scrollY > bannerHeight ? navbarHeight : navbarHeight + bannerHeight;
-                    const targetPosition = target.getBoundingClientRect().top + window.scrollY - totalOffset - 20;
+                    // Get the target's position relative to the document
+                    const targetRect = target.getBoundingClientRect();
+                    const targetTop = targetRect.top + window.pageYOffset;
+                    
+                    // Calculate final position with navbar offset
+                    const scrollPosition = targetTop - navbarHeight - 20;
                     
                     window.scrollTo({
-                        top: Math.max(0, targetPosition),
+                        top: Math.max(0, scrollPosition),
                         behavior: 'smooth'
                     });
                 }
