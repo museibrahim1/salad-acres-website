@@ -1,0 +1,30 @@
+// Renovate config — static HTML/CSS/JS sites with no package.json.
+// Used in: museibrahim1/salad-acres-website.
+//
+// Almost nothing to update — Renovate's job here is mostly keeping
+// any GitHub Actions versions current. Quiet schedule (monthly) so
+// the repo doesn't ping for changes that don't exist.
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
+    "config:recommended",
+    ":semanticCommits",
+    ":dependencyDashboard",
+    ":timezone(America/Chicago)",
+  ],
+  schedule: ["before 8am on the first day of the month"],
+  labels: ["dependencies"],
+  prConcurrentLimit: 3,
+  rangeStrategy: "bump",
+  enabledManagers: ["github-actions", "dockerfile"],
+  packageRules: [
+    {
+      matchManagers: ["github-actions"],
+      groupName: "github-actions",
+      pinDigests: true,
+      automerge: true,
+      automergeType: "branch",
+      matchUpdateTypes: ["patch", "minor", "digest"],
+    },
+  ],
+}
